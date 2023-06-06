@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <style>
+        canvas{
+            border: 2px solid black;
+            display: block;
+            background-color: rgb(233, 240, 240);
+            box-shadow: 10px 10px 10px 2px black;
+            cursor:pointer ;
+        }
+        body{
+            margin:0
+        }
+        div{
+            display: inline;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #color{
+            background-color: blanchedalmond;
+            border-radius: 15px;
+            width:30px;
+            height: 30px;
+
+        }
+        h1{
+            display: inline;
+            padding-left: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <label for="color" >Color:</label>
+        <input type="color" name="color" id="color">
+    </div>
+    <div>
+        <label for="Stroke">Stroke</label>
+        <input type="number" name="stroke" id="stroke" min="1" max="10" value="1">
+    </div>
+    <button id="clear">Clear</button>
+    <h1>Paint App</h1>
+    
+    <canvas id="canvas" width="1230" height="540"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
